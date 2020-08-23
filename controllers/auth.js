@@ -1,7 +1,6 @@
 // require statements
 const db = require('../models')
 const bcrypt = require('bcrypt')
-const { response, request } = require('express')
 
 // functions for auth (login, register, logout, verify)
 const login = (request, response) => {

@@ -10,7 +10,7 @@ const login = (request, response) => {
 }
 
 const register = (request, response) => {
-    const { name, email, password } = request.bodty
+    const { name, email, password } = request.body
     if (!name || !email || !password) {
         return response.json ({
             message: "Please enter a name, email, and password"

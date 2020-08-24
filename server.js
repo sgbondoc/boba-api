@@ -6,6 +6,7 @@ const cors = require('cors')
 const session = require('express-session')
 const MongoStore = require('connect-mongo')(session) 
 const passport = require('./passport')
+const router = require('./routes/auth')
 
 const port = process.env.PORT || 4000
 const app = express()
@@ -36,7 +37,7 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 // middleware API routes
-app.use('/api/v1/auth')
+app.use('/api/v1/auth', routes.auth)
 
 // connection
 app.listen(port, () => console.log(`Server is running on port ${port}`))

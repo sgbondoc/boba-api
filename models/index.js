@@ -16,5 +16,6 @@ mongoose.connect(connectionString, configOptions)
     .catch(err => console.log(`MongoDB connection error: ${err}`))
 
 module.exports = {
+    Rating: require('./rating'),
     User: require('./user')
 }

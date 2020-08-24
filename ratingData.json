@@ -1,0 +1,15 @@
+{
+    "ratings": [
+        {
+        "businessName": "Share Tea",
+        "location": "Livermore, CA",
+        "drink": "Black milk tea with boba",
+        "overallRating": 3,
+        "drinksRating": 3,
+        "toppingsRating": 3,
+        "snacksRating": 3,
+        "serviceRating": 3,
+        "rewardsProgam": true
+        }
+    ]
+}

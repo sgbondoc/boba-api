@@ -1,15 +1,37 @@
 {
     "ratings": [
         {
-        "businessName": "Share Tea",
-        "location": "Livermore, CA",
-        "drink": "Black milk tea with boba",
-        "overallRating": 3,
-        "drinksRating": 3,
-        "toppingsRating": 3,
-        "snacksRating": 3,
-        "serviceRating": 3,
-        "rewardsProgam": true
+            "businessName": "Share Tea",
+            "location": "Livermore, CA",
+            "drink": "Black milk tea with boba",
+            "overallRating": 3,
+            "drinksRating": 3,
+            "toppingsRating": 3,
+            "snacksRating": 3,
+            "serviceRating": 3,
+            "rewardsProgam": true
+        },
+        {
+            "businessName": "T4",
+            "location": "Livermore, CA",
+            "drink": "Taro milk tea with boba",
+            "overallRating": 3,
+            "drinksRating": 3,
+            "toppingsRating": 3,
+            "snacksRating": 4,
+            "serviceRating": 3,
+            "rewardsProgam": false
+        },
+        {
+            "businessName": "Boba Guys",
+            "location": "San Ramon, CA",
+            "drink": "Korean banana milk and coffee with boba",
+            "overallRating": 4,
+            "drinksRating": 4,
+            "toppingsRating": 4,
+            "snacksRating": 3,
+            "serviceRating": 3,
+            "rewardsProgam": false
         }
     ]
 }

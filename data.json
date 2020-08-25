@@ -33,5 +33,18 @@
             "serviceRating": 3,
             "rewardsProgam": false
         }
+    ],
+
+    "drinks": [
+        {
+            "drink": "Strawberry matcha latte",
+            "businessName": "Boba Guys",
+            "location": "San Ramon, CA"
+        },
+        {
+            "drink": "Wintermelon tea with boba",
+            "businessName": "Gong Cha",
+            "location": "Pleasanton, CA"
+        }
     ]
 }

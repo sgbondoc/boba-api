@@ -37,6 +37,7 @@ app.use(passport.session())
 
 // middleware API routes
 app.use('/api/v1/ratings', routes.ratings)
+app.use('/api/v1/drinks', routes.drinks)
 app.use('/api/v1/auth', routes.auth)
 
 // connection

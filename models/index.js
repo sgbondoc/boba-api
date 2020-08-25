@@ -17,5 +17,6 @@ mongoose.connect(connectionString, configOptions)
 
 module.exports = {
     Rating: require('./rating'),
+    Drink: require('./drink'),
     User: require('./user')
 }

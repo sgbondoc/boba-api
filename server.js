@@ -1,14 +1,19 @@
 // require statements
 const express = require('express')
+const app = express()
+
+// atlas connectionString
+require("dotenv").config()
+
 const routes = require('./routes')
 
+// for auth
 const cors = require('cors')
 const session = require('express-session')
 const MongoStore = require('connect-mongo')(session) 
 const passport = require('./passport')
 
 const port = process.env.PORT || 4000
-const app = express()
 
 // middleware JSON parsing
 app.use(express.json())

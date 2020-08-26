@@ -51,7 +51,7 @@ const destroy = (request, response) => {
             message: "No rating with that ID found"
         })
         response.json({ 
-            message: "Game was deleted successfully!"
+            message: "Rating was deleted successfully!"
          })
     })
 }

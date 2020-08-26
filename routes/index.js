@@ -2,6 +2,6 @@
 module.exports = {
     ratings: require('./ratings'),
     drinks: require('./drinks'),
-    users: require('./users')
+    users: require('./users'),
     auth: require('./auth')
 }

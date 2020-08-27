@@ -2,12 +2,12 @@
 const db = require('../models')
 
 const index = (request, response) => {
-    db.Rating.find({}, (err, foundRatings) => {
+    db.Rating.find({}, (err, allRatings) => {
         if (err) console.log("Error in ratings#index:", err)
-        if (!foundRatings) return response.json({
+        if (!allRatings) return response.json({
             message: "No ratings in database."
         })
-        response.json({ ratings: foundRatings})
+        response.json({ ratings: allRatings})
     })
 }
 
@@ -22,10 +22,18 @@ const show = (request, response) => {
 }
 
 const create = (request, response) => {
-    db.Rating.create(request.body, (err, savedRating) => {
+    const rewards = request.body
+
+    if (rewards.rewardsProgram === "on"){
+        rewards.rewardsProgram = true
+    } else {
+        rewards.rewardsProgram = false
+    }
+
+    db.Rating.create(request.body, (err, createdRating) => {
         if (err) console.log("Error in ratings#create:", err)
         // TODO: validations and error handling here (if needed)
-        response.json({ rating: savedRating })
+        response.json({ rating: createdRating })
     })
 }
 

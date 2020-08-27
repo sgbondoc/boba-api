@@ -4,8 +4,8 @@ const bcrypt = require('bcrypt')
 
 // functions for auth (login, register, logout, verify)
 const login = (request, response) => {
-    console.log("request.user here >>>>>", request.user)
-    console.log("request.session here >>>>>", request.session)
+    // console.log("request.user here >>>>>", request.user)
+    // console.log("request.session here >>>>>", request.session)
     response.json({ user: request.user.email })
 }
 

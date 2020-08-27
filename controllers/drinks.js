@@ -2,12 +2,12 @@
 const db = require('../models')
 
 const index = (request, response) => {
-    db.Drink.find({}, (err, foundDrinks) => {
+    db.Drink.find({}, (err, allDrinks) => {
         if (err) console.log("Error in drinks#index:", err)
-        if (!foundDrinks) return response.json({
+        if (!allDrinks) return response.json({
             message: "No drinks in database."
         })
-        response.json({ drinks: foundDrinks})
+        response.json({ drinks: allDrinks})
     })
 }
 

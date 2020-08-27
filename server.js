@@ -2,7 +2,7 @@
 const express = require('express')
 const app = express()
 
-// atlas connectionString
+// for atlas
 require("dotenv").config()
 
 const routes = require('./routes')

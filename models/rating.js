@@ -11,7 +11,6 @@ const RatingSchema = new mongoose.Schema({
     toppingsRating: Number,
     snacksRating: Number,
     serviceRating: Number,
-    rewardsProgam: Boolean
 })
 
 const Rating = mongoose.model('Rating', RatingSchema)

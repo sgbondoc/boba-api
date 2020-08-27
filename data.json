@@ -8,8 +8,7 @@
             "drinksRating": 3,
             "toppingsRating": 3,
             "snacksRating": 3,
-            "serviceRating": 3,
-            "rewardsProgam": true
+            "serviceRating": 3
         },
         {
             "businessName": "T4",
@@ -19,8 +18,7 @@
             "drinksRating": 3,
             "toppingsRating": 3,
             "snacksRating": 4,
-            "serviceRating": 3,
-            "rewardsProgam": false
+            "serviceRating": 3
         },
         {
             "businessName": "Boba Guys",
@@ -30,8 +28,7 @@
             "drinksRating": 4,
             "toppingsRating": 4,
             "snacksRating": 3,
-            "serviceRating": 3,
-            "rewardsProgam": false
+            "serviceRating": 3
         }
     ],
 

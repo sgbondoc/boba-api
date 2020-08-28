@@ -22,14 +22,6 @@ const show = (request, response) => {
 }
 
 const create = (request, response) => {
-    const rewards = request.body
-
-    if (rewards.rewardsProgram === "on"){
-        rewards.rewardsProgram = true
-    } else {
-        rewards.rewardsProgram = false
-    }
-
     db.Rating.create(request.body, (err, createdRating) => {
         if (err) console.log("Error in ratings#create:", err)
         // TODO: validations and error handling here (if needed)

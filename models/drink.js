@@ -3,7 +3,8 @@ const mongoose = require('mongoose')
 
 // drink schema
 const DrinkSchema = new mongoose.Schema({
-    drink: String
+    drink: String,
+    likes: Number
 })
 
 const Drink = mongoose.model('Drink', DrinkSchema)

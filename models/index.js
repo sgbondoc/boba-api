@@ -2,7 +2,7 @@
 const mongoose = require('mongoose')
 
 // connections
-const connectionString = process.env.MONGODB_URI || "mongodb://localhost:27017/boba"
+const connectionString = process.env.MONGODB_URI || 'mongodb://localhost:27017/boba'
 
 const configOptions = {
     useNewUrlParser: true,

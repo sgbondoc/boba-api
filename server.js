@@ -2,8 +2,8 @@
 const express = require('express')
 const app = express()
 
-// for atlas
-require("dotenv").config()
+// needs to be right under express require statements
+require('dotenv').config()
 
 const routes = require('./routes')
 
@@ -29,7 +29,7 @@ app.use(cors(corsOptions))
 
 // middleware session config
 app.use(session({
-    store: new MongoStore({ url: process.env.MONGODB_URI || "mongodb://localhost:27017/boba" }),
+    store: new MongoStore({ url: process.env.MONGODB_URI || 'mongodb://localhost:27017/boba' }),
     secret: "ILoveBoba",
     resave: false,
     saveUninitialized: false,

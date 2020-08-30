@@ -5,6 +5,11 @@ const app = express()
 // needs to be right under express require statements
 require('dotenv').config()
 
+app.use((request, response, next) => {
+    response.header('Access-Control-Allow-Origin', '*')
+    next()
+})
+
 const routes = require('./routes')
 
 // for auth

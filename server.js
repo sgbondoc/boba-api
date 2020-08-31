@@ -27,10 +27,10 @@ const corsOptions = {
 
 app.use(cors(corsOptions))
 
-app.use((request, response, next) => {
-    response.header('Access-Control-Allow-Origin', '*')
-    next()
-})
+// app.use((request, response, next) => {
+//     response.header('Access-Control-Allow-Origin', '*')
+//     next()
+// })
 
 // middleware session config
 app.use(session({

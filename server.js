@@ -27,21 +27,21 @@ const corsOptions = {
 
 app.use(cors(corsOptions))
 
-// app.use((request, response, next) => {
-//     response.header('Access-Control-Allow-Origin', '*')
-//     next()
-// })
-
-app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://showmetheboba.herokuapp.com')
-    res.setHeader('Vary', 'Origin')
-    res.setHeader(
-        'Access-Control-Allow-Headers',
-        'Origin, X-Requested-With, Content-Type, Accept, Authorization'
-    )
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE')
+app.use((request, response, next) => {
+    response.header('Access-Control-Allow-Origin', '*')
     next()
 })
+
+// app.use((request, response, next) => {
+//     response.setHeader('Access-Control-Allow-Origin', 'https://showmetheboba.herokuapp.com')
+//     response.setHeader('Vary', 'Origin')
+//     response.setHeader(
+//         'Access-Control-Allow-Headers',
+//         'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+//     )
+//     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE')
+//     next()
+// })
 
 // middleware session config
 app.use(session({

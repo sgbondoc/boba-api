@@ -32,6 +32,17 @@ app.use(cors(corsOptions))
 //     next()
 // })
 
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', 'https://showmetheboba.herokuapp.com')
+    res.setHeader('Vary', 'Origin')
+    res.setHeader(
+        'Access-Control-Allow-Headers',
+        'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+    )
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE')
+    next()
+})
+
 // middleware session config
 app.use(session({
     store: new MongoStore({ url: process.env.MONGODB_URI || 'mongodb://localhost:27017/boba' }),

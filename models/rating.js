@@ -10,7 +10,7 @@ const RatingSchema = new mongoose.Schema({
     drinksRating: Number,
     toppingsRating: Number,
     snacksRating: Number,
-    serviceRating: Number,
+    serviceRating: Number
 })
 
 const Rating = mongoose.model('Rating', RatingSchema)
